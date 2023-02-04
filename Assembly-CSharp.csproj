@@ -36,14 +36,16 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\_Data\InputManager.cs" />
      <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\SceneController.cs" />
      <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\ships\BaseBulletStarter.cs" />
      <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\BaseFrameController.cs" />
      <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\FrameController.cs" />
-     <Compile Include="Assets\_Data\ShipMovement.cs" />
+     <Compile Include="Assets\_Data\Ship\ShipMovement.cs" />
      <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\ships\ExplosionController.cs" />
      <Compile Include="Assets\2D Pixel Spaceships (2 Small Ships + Explosions)\Scripts\Tools.cs" />
-     <Compile Include="Assets\_Data\InputManager.cs" />
+     <Compile Include="Assets\_Data\Ship\ShipShooting.cs" />
+     <Compile Include="Assets\_Data\Bullet\BulletFly.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:\2020.3.44f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

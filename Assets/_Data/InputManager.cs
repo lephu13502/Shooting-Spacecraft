@@ -8,6 +8,8 @@ public class InputManager : MonoBehaviour
     public static InputManager Instance { get => instance; }
     [SerializeField] protected Vector3 mouseWorldPos;
     public Vector3 MouseWorldPos { get => mouseWorldPos; }
+    [SerializeField] protected float onFiring;
+    public float OnFiring { get => onFiring; }
 
     private void Awake()
     {
@@ -19,9 +21,17 @@ public class InputManager : MonoBehaviour
     {
         this.GetMousePos();
     }
+    void Update()
+    {
+        this.GetMouseDown();
+    }
     protected virtual void GetMousePos()
     {
         this.mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+    }
+    protected virtual void GetMouseDown()
+    {
+        this.onFiring = Input.GetAxis("Fire1");
     }
 
 }
